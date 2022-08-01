@@ -1,0 +1,1 @@
+.\.venv\Scripts\Activate.bat && py -3.9 .\apc_ups_notif_bot.py

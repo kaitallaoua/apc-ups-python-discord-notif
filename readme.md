@@ -1,0 +1,1 @@
+This project requires python 3.9. If running multiple versions, be sure to install with `py -3.9 -m pip install -r requirements.txt`
