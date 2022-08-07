@@ -20,7 +20,7 @@ APP_TITLE = "PowerChute System Tray Power Icon"
 
 config = json.loads(Path("config.json").read_text())
 WEBHOOK_URL = config["api_url"]
-SLEEP_TIME_SEC = 10
+SLEEP_TIME_SEC = 60
 
 
 async def main():

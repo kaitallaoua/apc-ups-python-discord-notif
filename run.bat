@@ -1,1 +1,1 @@
-.\.venv\Scripts\Activate.bat && py -3.9 .\apc_ups_notif_bot.py
+timeout /t 60 /nobreak > NUL && .\.venv\Scripts\Activate.bat && py -3.9 .\apc_ups_notif_bot.py
