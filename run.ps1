@@ -1,9 +1,15 @@
-param([string]$wd="")
+param([string]$wd = "")
 
-Write-Output "Sleeping"
+Write-Output "Sleeping to let things initialize..."
 Start-Sleep -Seconds 30.0
 Write-Output "Done Sleep"
+
 Set-Location $wd
-.\.venv\Scripts\Activate.ps1
+
 Write-Output "Init virtual enviroment"
-py -3.9 .\apc_ups_notif_bot.py
+.\.venv\Scripts\Activate.ps1
+
+Write-Output "Starting Script"
+python .\apc_ups_notif_bot.py
+
+Write-Output "Done"
